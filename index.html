@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-dumbbell"></i> Exercise Tracker</h1>
+
+    <!-- Exercise Selection -->
+    <div id="exercise-selection">
+      <h2>Select an Exercise</h2>
+      <select id="exercise-list">
+        <option value="">-- Select an Exercise --</option>
+      </select>
+      <button id="start-exercise">Start Exercise</button>
+    </div>
+
+    <!-- Exercise Details -->
+    <div id="exercise-details" class="hidden">
+      <h2>Exercise Details</h2>
+      <p><strong>Name:</strong> <span id="exercise-name"></span></p>
+      <p><strong>Description:</strong> <span id="exercise-description"></span></p>
+      <p><strong>Sets:</strong> <input type="number" id="sets" min="1" value="3"></p>
+      <p><strong>Reps:</strong> <input type="number" id="reps" min="1" value="10"></p>
+      <button id="complete-exercise"><i class="fas fa-check"></i> Complete Exercise</button>
+    </div>
+
+    <!-- Workout History -->
+    <div id="workout-history" class="hidden">
+      <h2>Workout History</h2>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
